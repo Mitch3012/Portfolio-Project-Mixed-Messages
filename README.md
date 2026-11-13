@@ -1,2 +1,91 @@
 # Portfolio Project Mixed Messages
+
 An interactive JavaScript application that generates random messages using reusable functions, arrays and conditional logic. Built with HTML, CSS and JavaScript, with automated testing using Node.js.
+
+# Mixed Messages 🎲
+
+A JavaScript project developed as part of the **Codecademy Back-End Engineer Career Path**.
+
+## About the Project
+
+Mixed Messages is a random motivational message generator built with JavaScript and Node.js.
+
+Each time the program runs, it randomly selects a beginning, middle, and ending to create a complete motivational message.
+
+### Example Messages
+
+- I can succeed
+- You will keep learning
+- We must never give up
+
+The generator can produce **27 unique message combinations**.
+
+## Technologies Used
+
+- JavaScript
+- Node.js
+- Git and GitHub
+- Node.js built-in test runner (`node:test`)
+- Node.js assertions (`node:assert/strict`)
+
+## Getting Started
+
+### Requirements
+
+Node.js installed on your computer.
+
+### Run the Application
+
+Clone the repository, open the project directory, and run:
+
+```bash
+node messages.js
+```
+
+The program generates motivational messages in the terminal.
+
+## Automated Testing
+
+The project includes automated tests that verify:
+
+1. The generator returns a string.
+2. Each message contains a valid beginning, middle, and ending.
+
+Run the tests with:
+
+```bash
+node --test messages-test.js
+```
+
+## Project Structure
+
+```text
+Mixed-Messages/
+├── messages.js
+├── messages-test.js
+└── README.md
+```
+
+## Future Improvements
+
+- Prevent previously generated messages from repeating.
+- Create an HTML/CSS user interface.
+- Add a Generate Message button.
+- Include custom artwork and styling.
+- Deploy the project as a public website.
+- Expand the collection of motivational messages.
+
+## Author
+
+**John Mitchell**
+
+Career-changing software developer with a focus on JavaScript, TypeScript, Angular, and full-stack development.
+
+- [GitHub](https://github.com/Mitch3012)
+- [Developer Portfolio](https://mitch3012.github.io/jmitchelldev/)
+
+## Project Status
+
+**Version 1.0 — Core functionality complete and tested.**
+
+Developed as part of Codecademy's Back-End Engineer Career Path.
