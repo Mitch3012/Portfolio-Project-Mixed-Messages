@@ -122,6 +122,7 @@ Career-changing software developer with a focus on JavaScript, TypeScript, Angul
 
 ## Project Status
 
-**Version 1.0 — Core functionality complete and tested.**
+**Version 1.5 — Core Logic Complete, UI Integration Pending**
+The JavaScript message generator and duplicate-prevention functionality are implemented and tested. All 27 unique message combinations have been successfully generated without duplication.
 
 Developed as part of Codecademy's Back-End Engineer Career Path.
