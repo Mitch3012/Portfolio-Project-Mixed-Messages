@@ -2,7 +2,43 @@
 
 An interactive JavaScript application that generates random messages using reusable functions, arrays and conditional logic. Built with HTML, CSS and JavaScript, with automated testing using Node.js.
 
-# Mixed Messages 🎲
+## Mixed Messages 🎲
+
+## Development Progress — 16 November 2026
+
+### Duplicate Prevention
+
+Implemented a findDuplicates() function to prevent repeated messages.
+
+Added message history tracking using an array.
+
+Successfully tested all 27 unique message combinations.
+
+Added a completion message when all combinations have been generated.
+
+### HTML & CSS
+
+Created the initial HTML5 page structure.
+
+Linked the external CSS and JavaScript files.
+
+Added a smiling sun logo with a transparent background.
+
+Applied a cornflower blue and golden-yellow colour scheme.
+
+Created and styled the Generate Message button.
+
+Added a message display area (id="message") with a temporary placeholder.
+
+Next Steps
+
+Connect the Generate Message button to the JavaScript functionality.
+
+Display generated messages dynamically on the webpage.
+
+Show the completion notification when all 27 messages have been displayed.
+
+Test the completed webpage functionality.
 
 A JavaScript project developed as part of the **Codecademy Back-End Engineer Career Path**.
 
