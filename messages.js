@@ -2,6 +2,7 @@ let firstPartOfMessage = ["I", "You", "We"];
 let secondPartOfMessage = ["can", "will", "must"];
 let thirdPartOfMessage = ["succeed!", "keep learning.", "never give up."];
 let previousMessages = [];
+let isComplete = false;
 
 function randomization() {
   let ramdonFirstPart = Math.floor(Math.random() * firstPartOfMessage.length);
@@ -16,8 +17,9 @@ function randomization() {
 
 function findDuplicates() {
   if (previousMessages.length === 27) {
-    console.log("You've reached the end of the messages!");
-    return;
+    isComplete = true;
+    click.textContent = "Start Again";
+    return "You've reached the end of the messages!";
   }
   let message = randomization();
 
@@ -27,8 +29,20 @@ function findDuplicates() {
   previousMessages.push(message);
   console.log(message);
   console.log(previousMessages.length);
+  return message;
 }
 
-findDuplicates();
-
-module.exports = { randomization };
+const click = document.getElementById("click");
+const messageElement = document.getElementById("message");
+click.addEventListener("click", function () {
+  if (isComplete) {
+    previousMessages.length = 0;
+    isComplete = false;
+    click.textContent = "Generate Message";
+    messageElement.hidden = true;
+    return;
+  }
+  const message = findDuplicates();
+  messageElement.textContent = message;
+  messageElement.hidden = false;
+});
